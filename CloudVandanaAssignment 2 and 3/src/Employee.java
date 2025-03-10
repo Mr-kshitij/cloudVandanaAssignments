@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-//  Problem Statement: 3. Object-Oriented Programming - Employee Management System
+//3. Object-Oriented Programming - Employee Management System
 //Design a simple Java class Employee with the following attributes:
 //• id (integer)
 //• name (string)
@@ -10,6 +8,8 @@ import java.util.ArrayList;
 //1. Create at least 3 Employee objects.
 //2. Store them in a list.
 //3. Display their details.
+
+import java.util.ArrayList;
 
 public class Employee {
     // Employee attributes

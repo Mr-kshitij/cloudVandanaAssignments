@@ -1,13 +1,11 @@
-// Array of image URLs
 const images = [
-    "https://via.placeholder.com/600x400/FF6347/FFFFFF?text=Image+1",
-    "https://via.placeholder.com/600x400/32CD32/FFFFFF?text=Image+2",
-    "https://via.placeholder.com/600x400/1E90FF/FFFFFF?text=Image+3"
+    "https://www.w3schools.com/w3images/fjords.jpg",
+    "https://www.w3schools.com/w3images/lights.jpg",
+    "https://www.w3schools.com/w3images/mountains.jpg"
 ];
 
 let currentIndex = 0;
 
-// Function to go to the next image
 function nextImage() {
     currentIndex++;
     if (currentIndex >= images.length) {
@@ -16,7 +14,6 @@ function nextImage() {
     updateSlider();
 }
 
-// Function to go to the previous image
 function prevImage() {
     currentIndex--;
     if (currentIndex < 0) {
@@ -25,11 +22,9 @@ function prevImage() {
     updateSlider();
 }
 
-// Function to update the image slider
 function updateSlider() {
     const sliderImages = document.querySelector(".slider-images");
     sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Initial display update
 updateSlider();
