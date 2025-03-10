@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-details h2 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .profile-details .designation {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .profile-details .bio {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-icon {
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #4CAF50;
+        }
+
+        @media (max-width: 600px) {
+            .profile-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-image">
+            <img src="Images\kshitij sonawane img.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h2>Kshitij Sonawane</h2>
+            <p class="designation">Automation Developer</p>
+            <p class="bio">I am a passionate Computer Engineer with a strong foundation in C, Core Java, HTML, CSS, Servlet, JSP and MySQL. Experienced in developing and maintaining automated solutions using UiPath and Document Understanding. Seeking a challenging Software Developer position to leverage my programming skills and contribute to the innovative growth of a progressive organization.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kshitij-sonawane-1408001bb" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                <a href="https://github.com/Mr-kshitij" target="_blank" class="social-icon github">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
